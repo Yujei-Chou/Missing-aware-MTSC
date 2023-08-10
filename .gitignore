@@ -1,7 +1,0 @@
-dataset/
-weight/ML/
-weight/finetune/
-weight/notpretrain/
-weight/pretrain/
-.gitignore
-.ipynb_checkpoints
