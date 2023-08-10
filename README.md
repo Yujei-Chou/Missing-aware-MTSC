@@ -1,23 +1,24 @@
 # Missing-aware-MTSC
 Missing-aware Multivariate Time Series Forecasting CKD Patients' Future Disease Condition
 # Preprocessing:
-- LAB data:
+- LAB data (初步前處理IRB的原始實驗室資料):
     ```
     python LAB_Preprocessing.py
     ```
-- Patient data:
+- Patient data (取得病患開始透析與接受腎臟移植日期):
     ```
     python Patient_Preprocessing.py
     ```
-- CKD data:
+- CKD data (處理成餵入模型的輸入格式):
     ```
     python CKD_Preprocessing.py 
     ```
 - Note:
   1. 前兩個前處理有涉及到處理mdb檔案必須先安裝[驅動程式](https://www.microsoft.com/en-us/download/details.aspx?id=54920)
-  2. IRB資料放在Nas(186)中的Dataset/CKD_IRB_Data
-  3. [前處理後的檔案與模型權重](https://drive.google.com/file/d/1uOpG7RPLJpaBbq8Tnj06ZA5YUfgQPBzc/view?usp=sharing)
-  4. [醫師作答問卷結果](https://drive.google.com/drive/folders/1-_cdz3oXnGPPlMc9417JMU6RdArAR4e9?usp=sharing)
+  2. 前處理需要較大的記憶體才跑得動
+  3. IRB資料放在Nas(186)中的Dataset/CKD_IRB_Data
+  4. [前處理後的檔案與模型權重](https://drive.google.com/file/d/1uOpG7RPLJpaBbq8Tnj06ZA5YUfgQPBzc/view?usp=sharing)
+  5. [醫師作答問卷結果](https://drive.google.com/drive/folders/1-_cdz3oXnGPPlMc9417JMU6RdArAR4e9?usp=sharing)
 # Model:
 - **Ours:** 
     - Framework:
